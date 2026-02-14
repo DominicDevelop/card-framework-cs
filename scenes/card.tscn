@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://1g0ov8o2qyef" path="res://Scripts/dependencies/card-framework-cs/Scripts/Card/Card_BACKUP.cs" id="1_6ohl5"]
+
+[node name="Card" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6ohl5")
+
+[node name="FrontFace" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="FrontFace"]
+layout_mode = 1
+offset_right = 150.0
+offset_bottom = 210.0
+
+[node name="BackFace" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="BackFace"]
+layout_mode = 1
+offset_right = 150.0
+offset_bottom = 210.0
